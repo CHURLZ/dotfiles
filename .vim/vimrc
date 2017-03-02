@@ -5,12 +5,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'valloric/youcompleteme'
+"Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 "Plugin 'omnisharp/omnisharp-vim'
-"Plugin 'scrooloose/syntastic'
-"Plugin 'tpope/vim-dispatch'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-markdown' 
 
 call vundle#end()
@@ -36,3 +36,5 @@ let g:NERDTreeWinSize=45
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+let NERDTreeIgnore = ['\.meta$']
