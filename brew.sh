@@ -27,7 +27,8 @@ brew install tree
 brew install docker
 brew cask install java
 brew cask install iterm2
-brew cask install lastpass
+brew cask install telegram
+brew cask install sublime-text
 
 brew cask install spotify
 brew cask install ngrok
