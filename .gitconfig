@@ -1,8 +1,5 @@
 [alias]
     l = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    d = diff --patch-with-stat
-    c = clone --recursive
-    #ca = !git add -A && git commit -av
     ci = commit
     co = checkout
     go = checkout -B
@@ -10,6 +7,7 @@
     remotes = remote -v
     undopush = push -f origin HEAD^:master
     pom = push origin master
+    pum = pull origin master
     s = status -sb
     st = status
     branches = branch -a
@@ -72,7 +70,7 @@
 [credential]
 	helper = osxkeychain
 [user]
-	name = Peter Liljenberg
-	email = pliljenberg@gmail.com
+	name = Carl Berglund
+	email = kalle.berglund@gmail.com
 [pull]
 	rebase = true
