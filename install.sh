@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # Install brew
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install applications
-# ./brew.sh
+./brew.sh
 
 # Symlink dot-files
 for file in .*; do
@@ -13,5 +13,3 @@ done
 
 # Post installation
 echo "Reboot :)"
-
-
