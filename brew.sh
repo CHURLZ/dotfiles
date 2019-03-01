@@ -32,7 +32,11 @@ brew cask install sublime-text
 
 brew cask install spotify
 brew cask install ngrok
+brew cask install npm
 brew cask install postman
+
+brew tap mongodb/brew
+brew install mongodb-community@4.0
 
 
 # Remove outdated versions from the cellar.
