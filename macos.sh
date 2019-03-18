@@ -23,6 +23,10 @@ defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 # General UI/UX                                                               #
 ###############################################################################
 
+# Carl OS
+defaults write com.apple.iTunesHelper ignore-devices 1
+
+
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName ${COMPUTERNAME}
 sudo scutil --set HostName ${COMPUTERNAME}
